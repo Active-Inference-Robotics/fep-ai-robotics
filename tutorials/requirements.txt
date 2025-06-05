@@ -1,0 +1,7 @@
+
+# Tutorial-specific dependencies for the tutorials folder
+# Add any libraries needed only for tutorials here
+matplotlib>=3.4
+pgmpy>=0.1.19
+numpy>=1.21
+

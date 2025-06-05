@@ -1,0 +1,15 @@
+[project]
+name = "fep_ai_robotics_tutorials"
+version = "0.1.0"
+description = "Tutorials for FEP AI Robotics."
+authors = ["Your Name <your.email@example.com>"]
+readme = "../README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "matplotlib>=3.4",
+    "pgmpy>=0.1.19",
+    "numpy>=1.21"
+]
+
+[tool.uv]
+# This section can be used for uv-specific settings if needed
