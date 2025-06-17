@@ -427,7 +427,9 @@ def main():
         results = run_benchmark(data_dir, args.max_tasks, agent_config)
         
         # Save results
-        output_file = f"arc_benchmark_results_{int(time.time())}.json"
+        results_dir = Path("./data/results")
+        results_dir.mkdir(parents=True, exist_ok=True)
+        output_file = results_dir / f"arc_benchmark_results_{int(time.time())}.json"
         with open(output_file, 'w') as f:
             json.dump({
                 'config': agent_config,
