@@ -198,13 +198,6 @@ The agent tracks several performance metrics:
 - **Learning Curves**: Evolution of free energy, epistemic value, and pragmatic value
 - **Program Characteristics**: Length distribution and primitive usage patterns
 
-### Typical Results
-
-On simple ARC-AGI tasks, the agent typically achieves:
-- 60-80% solve rate on rotation/reflection tasks
-- 40-60% solve rate on color manipulation tasks
-- 20-40% solve rate on complex pattern tasks
-
 ## Advanced Features
 
 ### Regional Operations
