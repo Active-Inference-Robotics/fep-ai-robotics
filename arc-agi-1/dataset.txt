@@ -1,0 +1,37 @@
+
+Tasks
+
+ARC-AGI tasks are a series of three to five input and output tasks followed by a final task with only the input listed. Each task tests the utilization of a specific learned skill based on a minimal number of cognitive priors.
+
+ARC-AGI task
+
+In their native form, tasks are a JSON lists of integers. These JSON can also be represented visually as a grid of colors using an ARC-AGI task viewer. You can view an example of a task here.
+
+A successful submission is a pixel-perfect description (color and position) of the final task's output.
+
+ARC-AGI-1
+
+Official Dataset · Solve ARC-AGI-1 Tasks
+
+The Abstraction and Reasoning Corpus (ARC-AGI-1), first introduced in 2019 by François Chollet, debuted in his paper On the Measure Of Intelligence. Chollet, a prominent Google AI researcher and creator of the deep learning library Keras, developed ARC-AGI-1 specifically as a novel benchmark designed to test machine reasoning and general problem-solving skills.
+ARC-AGI-1 Task
+ARC-AGI-1 Task (#3aa6fb7a)
+
+At the time of its launch, there was growing recognition that deep learning methods excelled in narrow, specialized tasks but fell short in demonstrating human-like generalization. ARC-AGI-1 was a direct response to this gap, aimed at evaluating AI's capability to handle novel, unforeseen problems, situations it had not been explicitly trained on. For further reading on this, see the ARC Prize 2024 Technical Report.
+
+Motivated by the need for a true measure of AGI, ARC-AGI-1 functions as an "AGI yardstick," focusing on benchmarking the skill-acquisition capability (the fundamental core of intelligence) rather than performance on any single, predefined task. It specifically assesses how efficiently an AI can learn and generalize from minimal information, reflecting a fundamental characteristic of human intelligence.
+
+ARC-AGI-1 consists of 800 puzzle-like tasks, designed as grid-based visual reasoning problems. These tasks, trivial for humans but challenging for machines, typically provide only a small number of example input-output pairs (usually around three). This requires the test taker (human or AI) to deduce underlying rules through abstraction, inference, and prior knowledge rather than brute-force or extensive training.
+Dataset 	Tasks 	Description
+Training Set 	400 tasks 	A training set dedicated as a playground to train your system
+Public Eval Set 	400 tasks 	Used to evaluate your final algorithm.
+Semi-Private Eval Set 	100 tasks 	Introduced in mid-2024, this set of 100 tasks was hand selected to use as a semi-private hold out set when testing closed source models.
+Private Eval Set 	100 tasks 	Used as the basis of the ARC Prize competition. Determined final leaderboard in 2020, 2022, 2023, and 2024.
+
+From its introduction in 2019 until late 2024, ARC-AGI remained unsolved by AI systems, maintaining its reputation as one of the toughest benchmarks available for general intelligence. The fact that it stayed unbeaten for so long highlights the significant gap between human and AI reasoning capabilities.
+
+In December 2024, OpenAI featured ARC-AGI-1 as the leading benchmark to measure the performance of their o3-preview experimental model. o3-preview at low compute scored 75% on ARC-AGI-1 and reached 87% accuracy with higher compute. This marked the first effective solution of the ARC challenge in over five years. To view ARC-AGI results on the publicly released o3 model, see our analysis.
+
+This achievement represented a step-change in AI's generalization abilities, validating the ARC benchmark's effectiveness in measuring meaningful progress toward AGI. The solving of ARC-AGI-1 triggered renewed interest in benchmarks like ARC-AGI-2, designed to further challenge AI and advance research toward genuine human-level intelligence.
+
+See a long list of resources on ARC-AGI-1.

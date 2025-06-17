@@ -1,0 +1,4 @@
+ Main package dependencies for fep_ai_robotics
+numpy>=1.21
+scipy>=1.7
+# Add any other core dependencies for the main package below

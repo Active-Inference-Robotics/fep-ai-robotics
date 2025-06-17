@@ -5,21 +5,15 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "fep_ai_robotics"
 version = "0.1.0"
-description = "A Python framework implementing the Free Energy Principle (FEP) and Active Inference for autonomous robotic systems."
+description = "Main package for FEP AI Robotics."
+authors = ["Your Name <your.email@example.com>"]
 readme = "README.md"
-license = {text = "MIT"}
-authors = [
-    {name = "Your Name", email = "your.email@example.com"}
-]
+requires-python = ">=3.8"
 dependencies = [
-    "numpy",
-    "scipy",
-    "matplotlib",
-    "torch",
-    "gymnasium",
-    "pybullet"
+    "numpy>=1.21",
+    "scipy>=1.7"
+    # Add other main package dependencies here
 ]
 
-[project.urls]
-Homepage = "https://github.com/yourusername/fep-ai-robotics"
-Documentation = "https://github.com/yourusername/fep-ai-robotics/wiki"
+[tool.uv]
+# This section can be used for uv-specific settings if needed
